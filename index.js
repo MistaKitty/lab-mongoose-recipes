@@ -41,7 +41,7 @@ mongoose
     );
   })
   .then((updatedRecipe)=>{
-    console.log(`Success! recipe was founded and updated!!! ${updatedRecipe.title} with new duration ${updatedRecipe.duration}`);
+    console.log(`Success! recipe was found and updated!!! ${updatedRecipe.title} with new duration ${updatedRecipe.duration}`);
   })
   .then(()=>{
     return Recipe.deleteOne({title: "Carrot Cake"});
